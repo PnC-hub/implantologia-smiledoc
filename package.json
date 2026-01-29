@@ -1,0 +1,17 @@
+{
+  "name": "implantologia-smiledoc",
+  "version": "1.0.0",
+  "description": "Sito landing implantologia Smiledoc - Monterotondo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "nuxt": "^3.21.0"
+  }
+}
