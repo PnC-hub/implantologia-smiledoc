@@ -1,10 +1,12 @@
 <template>
   <div class="font-poppins text-gray-800 bg-white">
+    <SchemaMarkup :faq-items="faqItems" />
+    <ExitPopup />
 
     <!-- HEADER -->
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 transition-all duration-300" :class="scrolled ? 'py-2' : 'py-3'">
       <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-        <div class="flex items-center gap-3">
+        <NuxtLink to="/" class="flex items-center gap-3">
           <div class="w-10 h-10 bg-brand-dark rounded-full flex items-center justify-center">
             <i class="fas fa-tooth text-white text-lg"></i>
           </div>
@@ -12,11 +14,12 @@
             <span class="text-xl font-bold text-brand-dark">Smiledoc</span>
             <span class="text-xs block text-gray-500 -mt-1">Implantologia</span>
           </div>
-        </div>
+        </NuxtLink>
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
           <a href="#chi-siamo" class="text-gray-600 hover:text-brand-accent transition">Chi Siamo</a>
+          <NuxtLink to="/blog" class="text-gray-600 hover:text-brand-accent transition">Blog</NuxtLink>
           <a href="#contatti" class="text-gray-600 hover:text-brand-accent transition">Contatti</a>
-          <a href="https://smiledoc.it" target="_blank" class="text-gray-600 hover:text-brand-accent transition">Smiledoc.it</a>
+          <a href="https://smiledoc.it" target="_blank" rel="noopener" class="text-gray-600 hover:text-brand-accent transition">Smiledoc.it</a>
         </nav>
       </div>
     </header>
@@ -24,12 +27,12 @@
     <!-- HERO -->
     <section class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-slate-50 to-white">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <p class="text-brand-accent font-semibold text-sm uppercase tracking-wider mb-4">Centro Odontoiatrico Smiledoc - Monterotondo (RM)</p>
+        <p class="text-brand-accent font-semibold text-sm uppercase tracking-wider mb-4">Centro Odontoiatrico Smiledoc &mdash; Monterotondo (RM)</p>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-brand-dark mb-6">
           Senti dolore quando mangi e provi imbarazzo quando parli perch&eacute; hai una <span class="text-brand-accent">dentiera mobile</span> o ti mancano uno o pi&ugrave; denti?
         </h1>
         <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Scopri come centinaia di persone a <strong>Monterotondo e nel Lazio</strong> hanno detto addio al dolore e sono tornate a sorridere liberamente grazie al protocollo di implantologia del <strong>Dott. Piernatale Civero</strong>
+          Scopri come centinaia di persone a <strong>Monterotondo, Mentana, Fonte Nuova e Guidonia</strong> hanno detto addio al dolore e sono tornate a sorridere liberamente grazie al protocollo di implantologia del <strong>Dott. Piernatale Civero</strong>
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#contatti" class="inline-block bg-brand-green hover:bg-brand-green-hover text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
@@ -68,10 +71,9 @@
           Scopri come gli impianti dentali del Dott. Civero ti aiuteranno a dire addio al dolore e tornare a sorridere liberamente
         </h2>
         <p class="text-gray-500 mb-8">Guarda il video per capire come funziona il nostro protocollo</p>
-        <!-- Video Placeholder -->
         <div class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video shadow-2xl group cursor-pointer" @click="showVideoNote = true">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80" alt="Studio dentistico moderno" class="w-full h-full object-cover opacity-70" />
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80" alt="Studio dentistico moderno Smiledoc Monterotondo" class="w-full h-full object-cover opacity-70" loading="lazy" />
           <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-20 h-20 bg-brand-accent rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
               <i class="fas fa-play text-white text-3xl ml-1"></i>
@@ -81,7 +83,6 @@
             <i class="fas fa-clock mr-1"></i>3 min - Il protocollo Smiledoc
           </div>
         </div>
-        <!-- Video Note Modal -->
         <div v-if="showVideoNote" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" @click.self="showVideoNote = false">
           <div class="bg-white rounded-2xl p-8 max-w-md text-left">
             <h3 class="text-xl font-bold text-brand-dark mb-3">Video in arrivo</h3>
@@ -127,7 +128,7 @@
       </div>
     </section>
 
-    <!-- SOLUZIONE / NATI PER SORRIDERE -->
+    <!-- SOLUZIONE -->
     <section class="py-16 bg-white">
       <div class="max-w-4xl mx-auto px-4">
         <div class="text-center mb-12">
@@ -144,8 +145,8 @@
             <p class="font-semibold text-brand-dark">Senza alcun impegno di acquisto</p>
           </div>
           <div class="bg-brand-green/5 border border-brand-green/20 rounded-xl p-5 text-center">
-            <i class="fas fa-euro-sign text-brand-green text-2xl mb-2"></i>
-            <p class="font-semibold text-brand-dark">Senza spendere un solo euro</p>
+            <i class="fas fa-clipboard-check text-brand-green text-2xl mb-2"></i>
+            <p class="font-semibold text-brand-dark">Valutazione personalizzata completa</p>
           </div>
           <div class="bg-brand-green/5 border border-brand-green/20 rounded-xl p-5 text-center">
             <i class="fas fa-home text-brand-green text-2xl mb-2"></i>
@@ -164,7 +165,7 @@
       </div>
     </section>
 
-    <!-- CHI SIAMO / BIO -->
+    <!-- CHI SIAMO -->
     <section id="chi-siamo" class="py-16 bg-brand-dark text-white">
       <div class="max-w-4xl mx-auto px-4">
         <div class="md:flex gap-10 items-center">
@@ -204,7 +205,7 @@
         </p>
         <div class="bg-white rounded-xl p-8 shadow-md max-w-2xl mx-auto text-left">
           <p class="text-gray-700 leading-relaxed">
-            Hai 10 anni di tempo per mettere alla prova i tuoi denti e, se non salterai i controlli periodici stabiliti, nel raro caso in cui un dente si scheggi o presenti dei difetti interverremo <strong>GRATUITAMENTE</strong> per ripararlo o sostituirlo.
+            Hai 10 anni di tempo per mettere alla prova i tuoi denti e, se non salterai i controlli periodici stabiliti, nel raro caso in cui un dente si scheggi o presenti dei difetti interverremo per ripararlo o sostituirlo.
           </p>
           <div class="mt-6 flex items-center gap-3 text-brand-green font-semibold">
             <i class="fas fa-check-circle text-xl"></i>
@@ -246,16 +247,37 @@
           L&rsquo;iniziativa &ldquo;Torna a Sorridere&rdquo; ti far&agrave; conoscere da vicino il Centro Odontoiatrico Smiledoc, e scoprirai come il nostro protocollo permette di stabilire con precisione il piano di cure ideale per te.
         </p>
         <a href="#contatti" class="inline-block bg-white text-brand-accent font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
-          <i class="fas fa-arrow-down mr-2"></i>Richiedi informazioni gratuite
+          <i class="fas fa-arrow-down mr-2"></i>Richiedi informazioni
         </a>
       </div>
     </section>
 
-    <!-- URGENZA -->
+    <!-- FAQ -->
     <section class="py-16 bg-slate-50">
       <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-brand-dark text-center mb-10">Domande frequenti</h2>
+        <div class="space-y-4">
+          <div v-for="(faq, i) in faqItems" :key="i" class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              @click="toggleFaq(i)"
+              class="w-full text-left px-6 py-5 flex items-center justify-between font-semibold text-brand-dark hover:bg-slate-50 transition"
+            >
+              <span>{{ faq.question }}</span>
+              <i :class="openFaq === i ? 'fas fa-chevron-up' : 'fas fa-chevron-down'" class="text-brand-accent text-sm ml-4 flex-shrink-0"></i>
+            </button>
+            <div v-show="openFaq === i" class="px-6 pb-5 text-gray-600 leading-relaxed">
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- URGENZA -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-brand-dark text-center mb-6">Cosa stai aspettando ancora?</h2>
-        <div class="bg-white rounded-xl p-8 shadow-md">
+        <div class="bg-slate-50 rounded-xl p-8 shadow-md">
           <p class="text-gray-700 leading-relaxed mb-4">
             Quando vivi le giornate mettendo dei limiti ogni volta che apri bocca, non puoi dire di essere libero e spensierato. Se sei diventato un maestro nel nascondere la bocca ogni volta che discuti con qualcuno, significa che non sei mai tranquillo e sicuro di te.
           </p>
@@ -265,6 +287,36 @@
           <p class="text-gray-700 leading-relaxed font-semibold text-brand-dark">
             La vecchia dentiera poco stabile, o la mancanza di uno o pi&ugrave; denti, non sono soltanto un problema estetico e funzionale. &Egrave; un limite alla tua libert&agrave;, e soprattutto &egrave; un vero ostacolo alla tua felicit&agrave;.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-brand-dark mb-3">Approfondimenti sull'implantologia</h2>
+          <p class="text-gray-600">Articoli informativi dal Dott. Piernatale Civero</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <NuxtLink
+            v-for="article in latestArticles"
+            :key="article.slug"
+            :to="`/blog/${article.slug}`"
+            class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all group overflow-hidden"
+          >
+            <div class="h-2 bg-brand-accent"></div>
+            <div class="p-5">
+              <span class="text-xs font-semibold text-brand-accent">{{ article.category }}</span>
+              <h3 class="font-bold text-brand-dark mt-1 mb-2 group-hover:text-brand-accent transition">{{ article.title }}</h3>
+              <p class="text-gray-500 text-sm">{{ article.excerpt.substring(0, 100) }}...</p>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="text-center mt-8">
+          <NuxtLink to="/blog" class="inline-block text-brand-accent font-semibold hover:underline">
+            Tutti gli articoli <i class="fas fa-arrow-right ml-1"></i>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -299,49 +351,11 @@
 
           <!-- Form -->
           <div class="md:w-1/2">
-            <form @submit.prevent="handleSubmit" class="bg-slate-50 rounded-2xl p-8 shadow-lg border border-slate-200">
-              <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Nome e Cognome *</label>
-                <input v-model="form.name" type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition" placeholder="Mario Rossi" />
-              </div>
-              <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Telefono *</label>
-                <input v-model="form.phone" type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition" placeholder="333 1234567" />
-              </div>
-              <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input v-model="form.email" type="email" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition" placeholder="mario@email.com" />
-              </div>
-              <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Orario preferito per il contatto</label>
-                <select v-model="form.time" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition bg-white">
-                  <option value="">Seleziona...</option>
-                  <option value="9-11">Mattina (9:00 - 11:00)</option>
-                  <option value="12-14">Pranzo (12:00 - 14:00)</option>
-                  <option value="15-18">Pomeriggio (15:00 - 18:00)</option>
-                </select>
-              </div>
-              <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700 mb-1">Descrivi brevemente la tua situazione</label>
-                <textarea v-model="form.message" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition" placeholder="Es: mi mancano 2 denti, uso una protesi mobile..."></textarea>
-              </div>
-              <div class="mb-6">
-                <label class="flex items-start gap-2 text-xs text-gray-500">
-                  <input v-model="form.privacy" type="checkbox" required class="mt-1" />
-                  <span>Acconsento al trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR). <a href="#" class="text-brand-primary underline">Privacy Policy</a></span>
-                </label>
-              </div>
-
-              <!-- Success message -->
-              <div v-if="formSubmitted" class="mb-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm">
-                <i class="fas fa-check-circle mr-2"></i>Grazie! Ti ricontatteremo al pi&ugrave; presto.
-              </div>
-
-              <button type="submit" :disabled="formLoading" class="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all disabled:opacity-50">
-                <span v-if="formLoading"><i class="fas fa-spinner fa-spin mr-2"></i>Invio in corso...</span>
-                <span v-else><i class="fas fa-paper-plane mr-2"></i>Invia la richiesta</span>
-              </button>
-            </form>
+            <LeadForm
+              title="Richiedi informazioni"
+              page-source="Homepage Implantologia - Form principale"
+              button-text="Invia la richiesta"
+            />
           </div>
         </div>
       </div>
@@ -349,45 +363,61 @@
 
     <!-- FOOTER -->
     <footer class="bg-slate-900 text-white/60 py-10">
-      <div class="max-w-4xl mx-auto px-4 text-center text-sm">
-        <p class="mb-2">&ndash; Responsabile Sanitario Dott. Piernatale Civero &ndash;</p>
-        <p class="mb-4">Centro Odontoiatrico Smiledoc | Via Monte Circeo 12, 00015 Monterotondo (RM)</p>
-        <p class="mb-4">
-          <a href="tel:+390774362520" class="text-white/80 hover:text-white transition"><i class="fas fa-phone mr-1"></i>0774 362 520</a>
-          <span class="mx-3">|</span>
-          <a href="mailto:info@smiledoc.it" class="text-white/80 hover:text-white transition"><i class="fas fa-envelope mr-1"></i>info@smiledoc.it</a>
-        </p>
-        <p class="text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
-        <div class="mt-3 space-x-4">
-          <a href="#" class="text-white/40 hover:text-white/60 transition">Privacy Policy</a>
-          <a href="#" class="text-white/40 hover:text-white/60 transition">Cookie Policy</a>
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="md:flex justify-between items-start gap-8 mb-8">
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                <i class="fas fa-tooth text-white text-lg"></i>
+              </div>
+              <span class="text-xl font-bold text-white">Smiledoc</span>
+            </div>
+            <p class="text-sm">Centro Odontoiatrico Smiledoc</p>
+            <p class="text-sm">Via Monte Circeo 12, 00015 Monterotondo (RM)</p>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h4 class="text-white font-semibold mb-2">Contatti</h4>
+            <p class="text-sm"><a href="tel:+390774362520" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i>0774 362 520</a></p>
+            <p class="text-sm mt-1"><a href="mailto:info@smiledoc.it" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i>info@smiledoc.it</a></p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-2">Pagine</h4>
+            <p class="text-sm"><NuxtLink to="/blog" class="hover:text-white transition">Blog</NuxtLink></p>
+            <p class="text-sm mt-1"><a href="https://smiledoc.it" target="_blank" rel="noopener" class="hover:text-white transition">Smiledoc.it</a></p>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-6 text-center text-sm">
+          <p class="mb-2">&ndash; Responsabile Sanitario Dott. Piernatale Civero &ndash;</p>
+          <p class="text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
+          <div class="mt-3 space-x-4">
+            <a href="/privacy" class="text-white/40 hover:text-white/60 transition">Privacy Policy</a>
+            <a href="/cookie" class="text-white/40 hover:text-white/60 transition">Cookie Policy</a>
+          </div>
         </div>
       </div>
     </footer>
 
+    <WhatsAppButton />
+    <StickyCta />
   </div>
 </template>
 
 <script setup lang="ts">
 const scrolled = ref(false)
 const showVideoNote = ref(false)
+const openFaq = ref<number | null>(null)
 
-// Form
-const form = reactive({
-  name: '',
-  phone: '',
-  email: '',
-  time: '',
-  message: '',
-  privacy: false,
-})
-const formLoading = ref(false)
-const formSubmitted = ref(false)
+const { getLatestArticles } = useBlogArticles()
+const latestArticles = getLatestArticles(3)
+
+const toggleFaq = (i: number) => {
+  openFaq.value = openFaq.value === i ? null : i
+}
 
 const benefits = [
   'Conoscerai tutti i vantaggi del sistema di intervento del Dott. Civero e il team di professionisti del Centro Odontoiatrico Smiledoc',
   'Avrai una corsia preferenziale per valutare la tua particolare condizione clinica',
-  'Otterrai informazioni preziose per riavere nuovi denti forti in sole 24 ore (se le tue condizioni cliniche lo consentono) anche se pensi di essere un caso disperato',
+  'Otterrai informazioni preziose per riavere nuovi denti forti in sole 24 ore (se le tue condizioni cliniche lo consentono) anche se pensi di essere un caso senza speranza',
   'Il sistema di implantologia del Dott. Civero riduce al minimo dolori e fastidi negli interventi',
   'Grazie alla sedazione cosciente e alla costante presenza di un anestesista professionista, supererai una volta per tutte la paura di sederti su quella poltrona',
 ]
@@ -415,29 +445,43 @@ const testimonials = [
 
 const formBenefits = [
   'Prenderai coscienza dei rischi che corri trascurando la tua salute dentale e rimandando le cure necessarie',
-  'Capirai perché Smiledoc può offrirti in un solo incontro esami diagnostici approfonditi che altri studi eseguono in più appuntamenti',
+  'Capirai perché Smiledoc può offrirti in un solo incontro esami diagnostici approfonditi e completi',
   'Scoprirai perché le nostre soluzioni sono realmente su misura per ogni paziente',
   'Avrai l\'occasione di accedere a una corsia preferenziale per conoscere il tuo percorso di cure ideale',
   'Saprai qual è la strada più rapida e sicura per tornare a sorridere in libertà e mangiare ciò che desideri',
-  'Tutto questo senza alcun obbligo o vincolo di acquisto, e senza spendere un solo euro!',
+  'Tutto questo senza alcun obbligo o vincolo di acquisto!',
 ]
 
-const handleSubmit = async () => {
-  formLoading.value = true
-  try {
-    // TODO: integrate with API
-    await new Promise(r => setTimeout(r, 1500))
-    formSubmitted.value = true
-    form.name = ''
-    form.phone = ''
-    form.email = ''
-    form.time = ''
-    form.message = ''
-    form.privacy = false
-  } finally {
-    formLoading.value = false
-  }
-}
+const faqItems = [
+  {
+    question: 'L\'intervento di implantologia è doloroso?',
+    answer: 'No. L\'intervento viene eseguito in anestesia locale. Presso Smiledoc, è disponibile anche la sedazione cosciente con un anestesista dedicato, che permette di vivere l\'esperienza in totale serenità, senza ansia né dolore. La maggior parte dei pazienti riferisce di non aver avvertito alcun fastidio durante l\'intervento.',
+  },
+  {
+    question: 'È possibile avere denti fissi in 24 ore?',
+    answer: 'Sì, in molti casi è possibile grazie alla tecnica del carico immediato. Dopo l\'inserimento degli impianti, viene applicata una protesi fissa provvisoria entro 24 ore. La possibilità di procedere con il carico immediato viene valutata durante la visita diagnostica in base alle condizioni cliniche del paziente.',
+  },
+  {
+    question: 'Posso fare gli impianti se ho poco osso?',
+    answer: 'Sì. Esistono diverse tecniche che permettono di posizionare impianti anche in condizioni di osso ridotto: rialzo del seno mascellare, innesti ossei, impianti corti o inclinati e, nei casi più complessi, impianti zigomatici. Il Dott. Civero ha una vasta esperienza nella gestione di questi casi.',
+  },
+  {
+    question: 'Quanto durano gli impianti dentali?',
+    answer: 'Un impianto dentale ben posizionato e correttamente mantenuto può durare oltre 20 anni, spesso accompagnando il paziente per tutta la vita. La durata dipende dalla qualità dell\'intervento, dall\'igiene orale del paziente e dal rispetto dei controlli periodici. Presso Smiledoc, le protesi sono coperte da garanzia di 10 anni.',
+  },
+  {
+    question: 'Quanto costa un impianto dentale?',
+    answer: 'Il costo varia in base alla complessità del caso, al numero di impianti necessari e al tipo di protesi. Ogni situazione è unica e richiede una valutazione personalizzata. Dopo la prima visita diagnostica presso Smiledoc, riceverai un piano di trattamento dettagliato con tutte le informazioni economiche.',
+  },
+  {
+    question: 'Soffro di diabete, posso fare gli impianti?',
+    answer: 'Nella maggior parte dei casi sì, a condizione che il diabete sia ben compensato e sotto controllo medico. Il Dott. Civero collabora con il diabetologo del paziente per garantire la massima sicurezza in tutte le fasi del trattamento.',
+  },
+  {
+    question: 'Come raggiungo il Centro Smiledoc?',
+    answer: 'Il Centro si trova in Via Monte Circeo 12 a Monterotondo (RM), facilmente raggiungibile da Mentana (10 min), Fonte Nuova (15 min), Guidonia (15-20 min), Palombara Sabina (20 min), Fiano Romano (15 min) e Capena (10 min). Lo studio è ben collegato anche con la stazione ferroviaria di Monterotondo-Mentana.',
+  },
+]
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
