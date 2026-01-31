@@ -30,7 +30,7 @@
         <div class="bg-slate-50 rounded-xl p-6 mb-8 text-left">
           <h3 class="font-semibold text-brand-dark mb-3">Nel frattempo puoi:</h3>
           <ul class="space-y-2 text-gray-600 text-sm">
-            <li class="flex gap-2"><i class="fas fa-phone text-brand-accent mt-1"></i>Chiamarci direttamente al <a href="tel:+390774362520" class="font-semibold text-brand-dark">0774 362 520</a></li>
+            <li class="flex gap-2"><i class="fas fa-phone text-brand-accent mt-1"></i>Chiamarci direttamente al <a href="tel:+390690623936" class="font-semibold text-brand-dark">06 906 23 936</a></li>
             <li class="flex gap-2"><i class="fas fa-book text-brand-accent mt-1"></i><NuxtLink to="/blog" class="text-brand-accent hover:underline">Leggere il nostro blog</NuxtLink> per saperne di più sull'implantologia</li>
             <li class="flex gap-2"><i class="fas fa-map-marker-alt text-brand-accent mt-1"></i>Trovarci in Via Monte Circeo 12, Monterotondo (RM)</li>
           </ul>

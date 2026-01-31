@@ -80,9 +80,7 @@
         <p class="mb-2">&ndash; Responsabile Sanitario Dott. Piernatale Civero &ndash;</p>
         <p class="mb-4">Centro Odontoiatrico Smiledoc | Via Monte Circeo 12, 00015 Monterotondo (RM)</p>
         <p class="mb-4">
-          <a href="tel:+390774362520" class="text-white/80 hover:text-white transition"><i class="fas fa-phone mr-1"></i>0774 362 520</a>
-          <span class="mx-3">|</span>
-          <a href="mailto:info@smiledoc.it" class="text-white/80 hover:text-white transition"><i class="fas fa-envelope mr-1"></i>info@smiledoc.it</a>
+          <a href="tel:+390690623936" class="text-white/80 hover:text-white transition"><i class="fas fa-phone mr-1"></i>06 906 23 936</a>
         </p>
         <p class="text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
       </div>

@@ -464,8 +464,7 @@ export const useBlogArticles = () => {
         <h2>Come raggiungerci</h2>
         <p><strong>Centro Odontoiatrico Smiledoc</strong><br/>
         Via Monte Circeo 12, 00015 Monterotondo (RM)<br/>
-        Telefono: 0774 362 520<br/>
-        Email: info@smiledoc.it</p>
+        Telefono: 06 906 23 936</p>
       `,
     },
     {

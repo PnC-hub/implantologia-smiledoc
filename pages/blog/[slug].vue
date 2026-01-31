@@ -73,8 +73,8 @@
               <NuxtLink to="/#contatti" class="inline-block bg-brand-green hover:bg-brand-green-hover text-white font-bold py-3 px-6 rounded-full text-center transition">
                 <i class="fas fa-envelope mr-2"></i>Richiedi informazioni
               </NuxtLink>
-              <a href="tel:+390774362520" class="inline-block bg-brand-dark text-white font-bold py-3 px-6 rounded-full text-center hover:bg-brand-dark/90 transition">
-                <i class="fas fa-phone mr-2"></i>0774 362 520
+              <a href="tel:+390690623936" class="inline-block bg-brand-dark text-white font-bold py-3 px-6 rounded-full text-center hover:bg-brand-dark/90 transition">
+                <i class="fas fa-phone mr-2"></i>06 906 23 936
               </a>
             </div>
           </div>
@@ -109,8 +109,7 @@
               <h4 class="font-bold mb-3">Centro Smiledoc</h4>
               <div class="space-y-2 text-sm text-white/80">
                 <p><i class="fas fa-map-marker-alt mr-2 text-brand-accent"></i>Via Monte Circeo 12, Monterotondo</p>
-                <p><a href="tel:+390774362520" class="hover:text-white"><i class="fas fa-phone mr-2 text-brand-accent"></i>0774 362 520</a></p>
-                <p><a href="mailto:info@smiledoc.it" class="hover:text-white"><i class="fas fa-envelope mr-2 text-brand-accent"></i>info@smiledoc.it</a></p>
+                <p><a href="tel:+390690623936" class="hover:text-white"><i class="fas fa-phone mr-2 text-brand-accent"></i>06 906 23 936</a></p>
               </div>
             </div>
           </div>

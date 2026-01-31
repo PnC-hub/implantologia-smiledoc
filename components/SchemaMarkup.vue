@@ -25,8 +25,7 @@ scripts.push({
     name: 'Centro Odontoiatrico Smiledoc',
     description: 'Implantologia dentale a Monterotondo. Impianti fissi anche in 24 ore con il Dott. Piernatale Civero.',
     url: 'https://implantologia.smiledoc.it',
-    telephone: '+39-0774-362520',
-    email: 'info@smiledoc.it',
+    telephone: '+39-06-90623936',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Via Monte Circeo 12',

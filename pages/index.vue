@@ -38,8 +38,8 @@
           <a href="#contatti" class="inline-block bg-brand-green hover:bg-brand-green-hover text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
             <i class="fas fa-envelope mr-2"></i>Vorrei essere ricontattato senza impegno
           </a>
-          <a href="tel:+390774362520" class="inline-flex items-center gap-2 text-brand-dark font-semibold hover:text-brand-accent transition">
-            <i class="fas fa-phone"></i>Chiama ora: 0774 362 520
+          <a href="tel:+390690623936" class="inline-flex items-center gap-2 text-brand-dark font-semibold hover:text-brand-accent transition">
+            <i class="fas fa-phone"></i>Chiama ora: 06 906 23 936
           </a>
         </div>
         <!-- Stats -->
@@ -368,8 +368,7 @@
           </div>
           <div class="mb-6 md:mb-0">
             <h4 class="text-white font-semibold mb-2">Contatti</h4>
-            <p class="text-sm"><a href="tel:+390774362520" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i>0774 362 520</a></p>
-            <p class="text-sm mt-1"><a href="mailto:info@smiledoc.it" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i>info@smiledoc.it</a></p>
+            <p class="text-sm"><a href="tel:+390690623936" class="hover:text-white transition"><i class="fas fa-phone mr-1"></i>06 906 23 936</a></p>
           </div>
           <div>
             <h4 class="text-white font-semibold mb-2">Pagine</h4>
