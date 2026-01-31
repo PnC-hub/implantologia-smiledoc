@@ -162,12 +162,11 @@
       <div class="max-w-4xl mx-auto px-4">
         <div class="md:flex gap-10 items-center">
           <div class="md:w-1/3 mb-8 md:mb-0 text-center">
-            <div class="w-48 h-48 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4">
-              <i class="fas fa-user-md text-6xl text-white/80"></i>
+            <div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
+              <img src="/img/dott-civero.png" alt="Dott. Piernatale Civero" class="w-full h-full object-cover" />
             </div>
             <h3 class="text-xl font-bold">Dott. Piernatale Civero</h3>
-            <p class="text-white/60 text-sm">Odontoiatra - Gnatologo</p>
-            <p class="text-white/60 text-sm">Esperto in Implantologia</p>
+            <p class="text-white/60 text-sm">Odontoiatra</p>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-2xl md:text-3xl font-bold mb-6">Da oltre 25 anni al servizio del tuo sorriso</h2>
