@@ -71,25 +71,17 @@
           Scopri come gli impianti dentali del Dott. Civero ti aiuteranno a dire addio al dolore e tornare a sorridere liberamente
         </h2>
         <p class="text-gray-500 mb-8">Guarda il video per capire come funziona il nostro protocollo</p>
-        <div class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video shadow-2xl group cursor-pointer" @click="showVideoNote = true">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80" alt="Studio dentistico moderno Smiledoc Monterotondo" class="w-full h-full object-cover opacity-70" loading="lazy" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-20 h-20 bg-brand-accent rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <i class="fas fa-play text-white text-3xl ml-1"></i>
-            </div>
-          </div>
-          <div class="absolute bottom-4 left-4 text-white text-sm font-medium">
-            <i class="fas fa-clock mr-1"></i>3 min - Il protocollo Smiledoc
-          </div>
-        </div>
-        <div v-if="showVideoNote" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" @click.self="showVideoNote = false">
-          <div class="bg-white rounded-2xl p-8 max-w-md text-left">
-            <h3 class="text-xl font-bold text-brand-dark mb-3">Video in arrivo</h3>
-            <p class="text-gray-600 mb-4">Il video di presentazione dello studio e del protocollo implantologico Smiledoc &egrave; in fase di produzione.</p>
-            <p class="text-gray-600 mb-4">Nel frattempo, <a href="#contatti" class="text-brand-accent font-semibold hover:underline" @click="showVideoNote = false">contattaci</a> per ricevere tutte le informazioni.</p>
-            <button @click="showVideoNote = false" class="bg-brand-dark text-white px-6 py-2 rounded-full font-medium hover:bg-brand-dark/90 transition">Chiudi</button>
-          </div>
+        <div class="relative bg-slate-900 rounded-2xl overflow-hidden aspect-video shadow-2xl">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
+            class="w-full h-full object-cover"
+          >
+            <source src="/video/protocollo-smiledoc.mp4" type="video/mp4" />
+            Il tuo browser non supporta il tag video.
+          </video>
         </div>
       </div>
     </section>
@@ -404,7 +396,7 @@
 
 <script setup lang="ts">
 const scrolled = ref(false)
-const showVideoNote = ref(false)
+
 const openFaq = ref<number | null>(null)
 
 const { getLatestArticles } = useBlogArticles()
