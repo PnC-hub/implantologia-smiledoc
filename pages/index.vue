@@ -76,7 +76,7 @@
             controls
             playsinline
             preload="metadata"
-            poster="https://images.unsplash.com/photo-1666214280250-41f15d032067?w=1200&q=80"
+            poster="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80"
             class="w-full h-full object-cover"
           >
             <source src="/video/protocollo-smiledoc.mp4" type="video/mp4" />
