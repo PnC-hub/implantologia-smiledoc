@@ -230,6 +230,32 @@
       </div>
     </section>
 
+    <!-- VIDEO TESTIMONIAL -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-brand-dark text-center mb-3">Le storie dei nostri pazienti</h2>
+        <p class="text-gray-500 text-center mb-10">Ascolta direttamente da chi ha ritrovato il sorriso con il metodo Denti Fissi in un Giorno</p>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div v-for="(v, i) in videoTestimonials" :key="i" class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div class="relative pb-[56.25%]">
+              <iframe
+                :src="`https://www.youtube.com/embed/${v.id}`"
+                class="absolute inset-0 w-full h-full"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-brand-dark text-sm">{{ v.title }}</h3>
+              <p class="text-gray-400 text-xs mt-1">{{ v.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA INTERMEDIA -->
     <section class="py-16 bg-brand-accent text-white">
       <div class="max-w-3xl mx-auto px-4 text-center">
@@ -431,6 +457,19 @@ const testimonials = [
     name: 'Avatar 1335',
     initials: 'A',
     type: 'Recensione Google',
+  },
+]
+
+const videoTestimonials = [
+  {
+    id: 'bRNbnjZ_NEg',
+    title: 'La storia di Natale',
+    description: 'Ha ricominciato a mangiare con gusto e sorridere con il metodo Denti Fissi in un Giorno',
+  },
+  {
+    id: 'JjDjGajKZYo',
+    title: 'La storia di Adriano',
+    description: 'Torna a sorridere e a masticare in un giorno grazie al Centro Smiledoc',
   },
 ]
 
