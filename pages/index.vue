@@ -480,6 +480,11 @@ const videoTestimonials = [
     title: 'La storia di Angela',
     description: 'Implantologia dentale complessa risolta con successo',
   },
+  {
+    id: 'RAtOE-1wznY',
+    title: 'La testimonianza di Lidia',
+    description: 'La sua esperienza con l\'implantologia presso il Centro Smiledoc',
+  },
 ]
 
 const formBenefits = [
