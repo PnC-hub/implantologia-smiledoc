@@ -19,7 +19,6 @@
           <a href="#chi-siamo" class="text-gray-600 hover:text-brand-accent transition">Chi Siamo</a>
           <NuxtLink to="/blog" class="text-gray-600 hover:text-brand-accent transition">Blog</NuxtLink>
           <a href="#contatti" class="text-gray-600 hover:text-brand-accent transition">Contatti</a>
-          <a href="https://smiledoc.it" target="_blank" rel="noopener" class="text-gray-600 hover:text-brand-accent transition">Smiledoc.it</a>
           <a href="tel:+390690623936" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-red-700 transition flex items-center gap-2 text-sm font-semibold"><i class="fas fa-phone"></i> 06 906 23 936</a>
         </nav>
       </div>
@@ -77,7 +76,7 @@
             controls
             playsinline
             preload="metadata"
-            poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
+            poster="https://images.unsplash.com/photo-1666214280250-41f15d032067?w=1200&q=80"
             class="w-full h-full object-cover"
           >
             <source src="/video/protocollo-smiledoc.mp4" type="video/mp4" />
@@ -400,7 +399,6 @@
           <div>
             <h4 class="text-white font-semibold mb-2">Pagine</h4>
             <p class="text-sm"><NuxtLink to="/blog" class="hover:text-white transition">Blog</NuxtLink></p>
-            <p class="text-sm mt-1"><a href="https://smiledoc.it" target="_blank" rel="noopener" class="hover:text-white transition">Smiledoc.it</a></p>
           </div>
         </div>
         <div class="border-t border-white/10 pt-6 text-center text-sm">
