@@ -414,22 +414,22 @@ const benefits = [
 
 const testimonials = [
   {
-    text: 'Dopo anni con la dentiera, finalmente mangio quello che voglio. Il Dott. Civero mi ha ridato la libertà. Professionalità e umanità incredibili.',
-    name: 'Maria G.',
-    initials: 'MG',
-    type: 'Implantologia completa',
+    text: 'Stavo in una condizione molto grave e il Dott. Civero ha risolto il problema e grazie a lui ho una vita quasi normale. Mi ha rimessa al mondo.',
+    name: 'Natascia',
+    initials: 'N',
+    type: 'Recensione Google',
   },
   {
-    text: 'Avevo paura del dentista da sempre. Qui mi sono sentito a mio agio dal primo momento. In 24 ore avevo i miei nuovi denti. Incredibile.',
-    name: 'Roberto L.',
-    initials: 'RL',
-    type: 'Carico immediato',
+    text: 'Risolti problemi che altri medici davano per irrisolvibili, la competenza del Dr Civero e del suo staff mi ha riportato ad una vita serena. Consiglio vivamente.',
+    name: 'Luca Russo',
+    initials: 'LR',
+    type: 'Recensione Google',
   },
   {
-    text: 'Mi avevano detto che non c\'era abbastanza osso. Il Dott. Civero ha trovato la soluzione. Oggi sorrido senza vergogna. Grazie di cuore.',
-    name: 'Anna P.',
-    initials: 'AP',
-    type: 'Impianti con poco osso',
+    text: 'Grazie alla Smiledoc ho ricominciato a sorridere. Tecniche e attrezzature all\'avanguardia, associate all\'esperienza e professionalità del Dottor Civero sono una vera garanzia.',
+    name: 'Avatar 1335',
+    initials: 'A',
+    type: 'Recensione Google',
   },
 ]
 
