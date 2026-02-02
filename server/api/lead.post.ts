@@ -37,10 +37,11 @@ export default defineEventHandler(async (event) => {
 
   try {
     await transporter.sendMail({
-      from: `"Smiledoc Implantologia" <${process.env.SMTP_USER || 'noreply@implantologiasmiledoc.it'}>`,
+      from: `"Implantologia Smiledoc" <${process.env.SMTP_USER || 'noreply@implantologiasmiledoc.it'}>`,
+      replyTo: email || 'rec.monterotondo@smiledoc.it',
       to: 'rec.monterotondo@smiledoc.it',
       cc: 'direzione@smiledoc.it',
-      subject: `[Implantologia Smiledoc] Nuovo contatto: ${name} - ${comune || 'N/D'}`,
+      subject: `[ImplantologiaSmiledoc] Nuovo contatto: ${name} - ${comune || 'N/D'}`,
       html: htmlBody,
     })
   } catch (err) {
