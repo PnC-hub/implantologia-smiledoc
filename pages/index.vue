@@ -470,6 +470,16 @@ const videoTestimonials = [
     title: 'La storia di Adriano',
     description: 'Torna a sorridere e a masticare in un giorno grazie al Centro Smiledoc',
   },
+  {
+    id: 'VcNgabxkMmI',
+    title: 'La storia di Laura',
+    description: 'Risolti tutti i problemi dentali con implantologia complessa computer guidata',
+  },
+  {
+    id: 'cpb2NU07Okg',
+    title: 'La storia di Angela',
+    description: 'Implantologia dentale complessa risolta con successo',
+  },
 ]
 
 const formBenefits = [
