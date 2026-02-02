@@ -20,6 +20,7 @@
           <NuxtLink to="/blog" class="text-gray-600 hover:text-brand-accent transition">Blog</NuxtLink>
           <a href="#contatti" class="text-gray-600 hover:text-brand-accent transition">Contatti</a>
           <a href="https://smiledoc.it" target="_blank" rel="noopener" class="text-gray-600 hover:text-brand-accent transition">Smiledoc.it</a>
+          <a href="tel:+390690623936" class="bg-brand-accent text-white px-4 py-2 rounded-full hover:bg-red-700 transition flex items-center gap-2 text-sm font-semibold"><i class="fas fa-phone"></i> 06 906 23 936</a>
         </nav>
       </div>
     </header>
