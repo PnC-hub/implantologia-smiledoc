@@ -120,7 +120,7 @@
     <footer class="bg-brand-dark text-white/60 py-6">
       <div class="max-w-3xl mx-auto px-4 text-center text-sm">
         <p>&ndash; Direttore Sanitario Dott. Piernatale Civero &ndash;</p>
-        <p class="mt-1 text-white/40">&copy; {{ new Date().getFullYear() }} Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
+        <p class="mt-1 text-white/40">&copy; {{ new Date().getFullYear() }} Centro Odontoiatrico Smiledoc | P.IVA: 15131801001</p>
       </div>
     </footer>
   </div>

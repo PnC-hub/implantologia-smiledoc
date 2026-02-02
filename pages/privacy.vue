@@ -15,7 +15,7 @@
         <h2 class="text-xl font-bold text-brand-dark mb-3 pb-2 border-b-2 border-slate-200">1. Titolare del Trattamento</h2>
         <p class="text-gray-700 leading-relaxed mb-3">
           Il Titolare del trattamento dei dati personali è il <strong>Centro Odontoiatrico Smiledoc S.r.l.</strong>,
-          con sede in Via Monte Circeo 12, 00015 Monterotondo (RM) — P.IVA: 10718251002.
+          con sede in Via Monte Circeo 12, 00015 Monterotondo (RM) — P.IVA: 15131801001.
         </p>
         <p class="text-gray-700 leading-relaxed">
           <strong>Direttore Sanitario:</strong> Dott. Piernatale Civero<br>
@@ -150,7 +150,7 @@
     <footer class="bg-brand-dark text-white/60 py-6">
       <div class="max-w-3xl mx-auto px-4 text-center text-sm">
         <p>&ndash; Direttore Sanitario Dott. Piernatale Civero &ndash;</p>
-        <p class="mt-1 text-white/40">&copy; {{ new Date().getFullYear() }} Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
+        <p class="mt-1 text-white/40">&copy; {{ new Date().getFullYear() }} Centro Odontoiatrico Smiledoc | P.IVA: 15131801001</p>
       </div>
     </footer>
   </div>

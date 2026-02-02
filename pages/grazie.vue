@@ -45,7 +45,7 @@
     <footer class="bg-slate-900 text-white/60 py-6">
       <div class="max-w-4xl mx-auto px-4 text-center text-sm">
         <p>Centro Odontoiatrico Smiledoc | Via Monte Circeo 12, 00015 Monterotondo (RM)</p>
-        <p class="mt-1 text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
+        <p class="mt-1 text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 15131801001</p>
       </div>
     </footer>
   </div>

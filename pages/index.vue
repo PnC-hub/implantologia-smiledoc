@@ -404,7 +404,7 @@
         </div>
         <div class="border-t border-white/10 pt-6 text-center text-sm">
           <p class="mb-2">&ndash; Direttore Sanitario Dott. Piernatale Civero &ndash;</p>
-          <p class="text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 10718251002</p>
+          <p class="text-white/40">Copyright {{ new Date().getFullYear() }} &copy; Centro Odontoiatrico Smiledoc | P.IVA: 15131801001</p>
           <div class="mt-3 space-x-4">
             <a href="/privacy" class="text-white/40 hover:text-white/60 transition">Privacy Policy</a>
             <a href="/cookie" class="text-white/40 hover:text-white/60 transition">Cookie Policy</a>
