@@ -485,6 +485,11 @@ const videoTestimonials = [
     title: 'La testimonianza di Lidia',
     description: 'La sua esperienza con l\'implantologia presso il Centro Smiledoc',
   },
+  {
+    id: 'hsUOAlzbWXM',
+    title: 'La testimonianza di Angela',
+    description: 'Un\'esperienza straordinaria con il team di implantologia Smiledoc',
+  },
 ]
 
 const formBenefits = [
