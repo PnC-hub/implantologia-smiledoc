@@ -588,6 +588,201 @@ export const useBlogArticles = () => {
         <p>La prima visita presso Smiledoc dura mediamente <strong>45-60 minuti</strong>. Questo tempo è necessario per una valutazione completa e approfondita, senza fretta. Crediamo che dedicare il giusto tempo alla diagnosi sia la premessa di un trattamento di successo.</p>
       `,
     },
+    // NUOVI ARTICOLI GEO-TARGETTIZZATI
+    {
+      slug: 'implantologia-dentale-mentana',
+      title: 'Implantologia dentale a Mentana: il centro di riferimento a 10 minuti',
+      metaTitle: 'Implantologia Dentale Mentana | Centro Smiledoc a 10 min',
+      metaDescription: 'Cerchi un implantologo a Mentana? Il Centro Smiledoc di Monterotondo è a soli 10 minuti. Denti fissi in 24h, sedazione cosciente, garanzia 10 anni.',
+      excerpt: 'Vivi a Mentana e hai bisogno di impianti dentali? Scopri perché centinaia di pazienti scelgono il Centro Smiledoc, a soli 10 minuti di distanza.',
+      date: '2026-02-01',
+      category: 'Implantologia',
+      readTime: '5 min',
+      content: `
+        <p>Se vivi a <strong>Mentana</strong> e stai cercando un centro specializzato in implantologia dentale, hai la fortuna di avere il <strong>Centro Odontoiatrico Smiledoc</strong> a soli 10 minuti di distanza, a Monterotondo.</p>
+
+        <h2>Perché i pazienti di Mentana scelgono Smiledoc</h2>
+        <p>Ogni mese accogliamo decine di pazienti da Mentana che ci scelgono per:</p>
+        <ul>
+          <li><strong>Vicinanza:</strong> 10 minuti in auto via Via Nomentana</li>
+          <li><strong>Esperienza:</strong> Dott. Civero con oltre 25 anni e 5.000+ impianti</li>
+          <li><strong>Tecnologia:</strong> TAC 3D, pianificazione digitale, chirurgia guidata</li>
+          <li><strong>Sedazione cosciente:</strong> per interventi senza stress</li>
+          <li><strong>Denti fissi in 24 ore:</strong> quando le condizioni lo permettono</li>
+        </ul>
+
+        <h2>Come raggiungerci da Mentana</h2>
+        <p>Il Centro Smiledoc si trova in <strong>Via Monte Circeo 12, Monterotondo</strong>. Da Mentana:</p>
+        <ul>
+          <li>Prendi Via Nomentana in direzione Monterotondo</li>
+          <li>Segui le indicazioni per il centro di Monterotondo</li>
+          <li>Tempo medio: <strong>10 minuti</strong></li>
+          <li>Ampio parcheggio disponibile</li>
+        </ul>
+
+        <h2>Il protocollo per i pazienti di Mentana</h2>
+        <p>Il percorso inizia con una <strong>visita diagnostica completa</strong> che include tutti gli esami radiografici in sede. Non dovrai recarti in centri radiologici esterni: tutto viene eseguito durante la stessa visita.</p>
+        <p>Dopo la valutazione, riceverai un piano di trattamento personalizzato con tutte le informazioni, compresi costi e tempistiche.</p>
+
+        <h2>Garanzia e assistenza</h2>
+        <p>Le protesi realizzate presso Smiledoc sono coperte da una <strong>garanzia di 10 anni</strong>. Inoltre, per i pazienti di Mentana, garantiamo assistenza prioritaria in caso di necessità urgenti.</p>
+
+        <h2>Prenota la tua visita</h2>
+        <p>Non rimandare la cura del tuo sorriso. Contattaci per prenotare una visita senza impegno: <strong>06 906 23 936</strong>.</p>
+      `,
+    },
+    {
+      slug: 'impianti-dentali-fonte-nuova',
+      title: 'Impianti dentali a Fonte Nuova: lo studio specializzato più vicino',
+      metaTitle: 'Impianti Dentali Fonte Nuova | Smiledoc a 15 min',
+      metaDescription: 'Impianti dentali per residenti di Fonte Nuova. Centro Smiledoc Monterotondo a 15 min. Carico immediato, sedazione, garanzia 10 anni. Prenota ora.',
+      excerpt: 'Cerchi un implantologo vicino a Fonte Nuova? Il Centro Smiledoc è il punto di riferimento per l\'implantologia nella zona nord di Roma.',
+      date: '2026-02-01',
+      category: 'Implantologia',
+      readTime: '5 min',
+      content: `
+        <p>Per i residenti di <strong>Fonte Nuova</strong> alla ricerca di cure implantologiche di alto livello, il <strong>Centro Odontoiatrico Smiledoc</strong> rappresenta la scelta ideale: siamo a soli 15 minuti di distanza.</p>
+
+        <h2>Implantologia avanzata vicino a Fonte Nuova</h2>
+        <p>Presso il nostro centro, il <strong>Dott. Piernatale Civero</strong> offre tutte le soluzioni implantologiche più moderne:</p>
+        <ul>
+          <li>Impianti singoli per denti mancanti</li>
+          <li>Riabilitazioni complete (All-on-4, All-on-6)</li>
+          <li>Carico immediato: denti fissi in 24 ore</li>
+          <li>Soluzioni per casi complessi (poco osso, diabete)</li>
+          <li>Sedazione cosciente per pazienti ansiosi</li>
+        </ul>
+
+        <h2>Perché scegliere Smiledoc</h2>
+        <p>I pazienti di Fonte Nuova ci scelgono per:</p>
+        <ul>
+          <li><strong>Specializzazione:</strong> focus esclusivo sull'implantologia</li>
+          <li><strong>Esperienza:</strong> oltre 5.000 impianti inseriti</li>
+          <li><strong>Tecnologia:</strong> diagnostica 3D e chirurgia computer-guidata</li>
+          <li><strong>Garanzia:</strong> 10 anni sulla protesi</li>
+          <li><strong>Assistenza:</strong> team dedicato e disponibile</li>
+        </ul>
+
+        <h2>Come arrivare da Fonte Nuova</h2>
+        <p>Raggiungerci è semplice:</p>
+        <ul>
+          <li>Da Tor Lupara: Via Nomentana verso Monterotondo (15 min)</li>
+          <li>Da Santa Lucia: SP 22a verso Monterotondo (12 min)</li>
+          <li>Indirizzo: Via Monte Circeo 12, Monterotondo</li>
+        </ul>
+
+        <h2>Prenota la tua visita</h2>
+        <p>Non aspettare che la situazione peggiori. Ogni giorno che passa, la mancanza di denti causa problemi sempre più complessi. Chiamaci: <strong>06 906 23 936</strong>.</p>
+      `,
+    },
+    {
+      slug: 'dentista-implantologo-guidonia',
+      title: 'Dentista implantologo a Guidonia: il centro specializzato a 15 minuti',
+      metaTitle: 'Dentista Implantologo Guidonia | Smiledoc Monterotondo',
+      metaDescription: 'Cerchi un dentista specializzato in impianti a Guidonia? Centro Smiledoc a 15-20 min. 25+ anni esperienza, denti fissi in 24h, garanzia 10 anni.',
+      excerpt: 'Stai cercando un dentista specializzato in implantologia nella zona di Guidonia? Scopri il Centro Smiledoc, a pochi minuti da Guidonia Montecelio.',
+      date: '2026-02-01',
+      category: 'Implantologia',
+      readTime: '5 min',
+      content: `
+        <p>Se abiti a <strong>Guidonia Montecelio</strong> o nelle frazioni circostanti e hai bisogno di impianti dentali, il <strong>Centro Odontoiatrico Smiledoc</strong> di Monterotondo è il punto di riferimento per l'implantologia nella zona.</p>
+
+        <h2>Un centro di eccellenza a portata di mano</h2>
+        <p>Guidonia è una delle aree più popolose del Lazio, ma trovare un centro veramente specializzato in implantologia può essere difficile. Il Centro Smiledoc, guidato dal <strong>Dott. Piernatale Civero</strong>, offre:</p>
+        <ul>
+          <li>Oltre 25 anni di esperienza in implantologia</li>
+          <li>Più di 5.000 impianti inseriti con successo</li>
+          <li>Tecnologia diagnostica all'avanguardia</li>
+          <li>Possibilità di denti fissi in 24 ore</li>
+          <li>Sedazione cosciente per interventi sereni</li>
+        </ul>
+
+        <h2>Distanza e collegamenti</h2>
+        <p>Da Guidonia Montecelio, raggiungerci è semplice:</p>
+        <ul>
+          <li>Via Tiburtina verso Monterotondo: 15-20 minuti</li>
+          <li>Via Palombarese: 20 minuti</li>
+          <li>Stazione ferroviaria Monterotondo-Mentana: comoda per chi usa i mezzi</li>
+        </ul>
+
+        <h2>Pazienti da Guidonia: le loro storie</h2>
+        <p>Molti dei nostri pazienti arrivano proprio da Guidonia e dalle zone limitrofe. Cercavano una soluzione definitiva ai loro problemi dentali e hanno trovato in Smiledoc la risposta che cercavano. Oggi masticano e sorridono con serenità.</p>
+
+        <h2>Il primo passo</h2>
+        <p>Non lasciare che la distanza ti fermi. 15-20 minuti di viaggio possono cambiarti la vita. Contattaci per una visita senza impegno: <strong>06 906 23 936</strong>.</p>
+      `,
+    },
+    {
+      slug: 'implantologia-palombara-sabina',
+      title: 'Implantologia a Palombara Sabina: il centro di riferimento nel Lazio',
+      metaTitle: 'Implantologia Palombara Sabina | Smiledoc a 20 min',
+      metaDescription: 'Impianti dentali per residenti di Palombara Sabina. Centro Smiledoc a 20 min: carico immediato, sedazione cosciente, 5000+ impianti. Prenota visita.',
+      excerpt: 'Abiti a Palombara Sabina e cerchi un centro specializzato in impianti dentali? Smiledoc è a soli 20 minuti di distanza.',
+      date: '2026-02-01',
+      category: 'Implantologia',
+      readTime: '5 min',
+      content: `
+        <p>Per chi vive a <strong>Palombara Sabina</strong> e cerca una soluzione definitiva ai problemi dentali, il <strong>Centro Odontoiatrico Smiledoc</strong> di Monterotondo offre servizi di implantologia di altissimo livello a soli 20 minuti di distanza.</p>
+
+        <h2>Perché venire fino a Monterotondo?</h2>
+        <p>La scelta di un implantologo non dovrebbe mai essere una questione di comodità, ma di competenza. Il Dott. Piernatale Civero ha dedicato oltre 25 anni alla perfezionamento delle tecniche implantologiche, diventando un punto di riferimento per tutta la provincia di Roma e oltre.</p>
+
+        <h2>Cosa offriamo ai pazienti di Palombara Sabina</h2>
+        <ul>
+          <li><strong>Diagnosi completa in sede:</strong> TAC 3D, radiografie, scansioni digitali</li>
+          <li><strong>Carico immediato:</strong> denti fissi in 24 ore quando possibile</li>
+          <li><strong>Sedazione cosciente:</strong> per chi ha paura del dentista</li>
+          <li><strong>Soluzioni per casi complessi:</strong> poco osso, diabete, età avanzata</li>
+          <li><strong>Garanzia 10 anni:</strong> sulla protesi definitiva</li>
+        </ul>
+
+        <h2>Come raggiungerci</h2>
+        <p>Da Palombara Sabina, prendere la SP 636 in direzione Monterotondo. Tempo di percorrenza medio: <strong>20 minuti</strong>. Il Centro si trova in Via Monte Circeo 12, con ampia disponibilità di parcheggio.</p>
+
+        <h2>Non aspettare ancora</h2>
+        <p>Ogni giorno che rimandi le cure, la situazione peggiora. La perdita ossea avanza, i denti vicini si spostano, i trattamenti diventano più complessi e costosi. Chiama oggi stesso: <strong>06 906 23 936</strong>.</p>
+      `,
+    },
+    {
+      slug: 'impianti-dentali-fiano-romano',
+      title: 'Impianti dentali a Fiano Romano: lo specialista a 15 minuti',
+      metaTitle: 'Impianti Dentali Fiano Romano | Centro Smiledoc',
+      metaDescription: 'Cerchi un implantologo vicino a Fiano Romano? Centro Smiledoc Monterotondo a 15 min. Dotti fissi 24h, 25 anni esperienza, garanzia 10 anni.',
+      excerpt: 'Vivi a Fiano Romano e hai bisogno di impianti dentali? Il Centro Smiledoc di Monterotondo è il punto di riferimento per l\'implantologia.',
+      date: '2026-02-01',
+      category: 'Implantologia',
+      readTime: '5 min',
+      content: `
+        <p>Se risiedi a <strong>Fiano Romano</strong> e stai valutando un intervento di implantologia, il <strong>Centro Odontoiatrico Smiledoc</strong> ti aspetta a soli 15 minuti di distanza, a Monterotondo.</p>
+
+        <h2>L'eccellenza implantologica vicino a Fiano</h2>
+        <p>Il Dott. Piernatale Civero, con oltre <strong>25 anni di esperienza</strong> e più di <strong>5.000 impianti</strong> inseriti, ha fatto del Centro Smiledoc un punto di riferimento per l'implantologia nel territorio.</p>
+
+        <h2>I nostri servizi</h2>
+        <ul>
+          <li>Impianti dentali singoli e multipli</li>
+          <li>Riabilitazioni complete dell'arcata (All-on-4, All-on-6)</li>
+          <li>Carico immediato: denti fissi in 24 ore</li>
+          <li>Gestione di casi complessi (scarso osso, patologie sistemiche)</li>
+          <li>Sedazione cosciente per pazienti ansiosi</li>
+        </ul>
+
+        <h2>La tecnologia al servizio della precisione</h2>
+        <p>Utilizziamo:</p>
+        <ul>
+          <li>TAC Cone Beam 3D per diagnosi millimetrica</li>
+          <li>Software di pianificazione chirurgica</li>
+          <li>Chirurgia guidata computer-assistita</li>
+          <li>Scanner intraorali digitali</li>
+        </ul>
+
+        <h2>Raggiungerci da Fiano Romano</h2>
+        <p>Prendere la SP Tiberina o la Via Salaria in direzione Monterotondo. In <strong>15 minuti</strong> sarai al Centro Smiledoc, Via Monte Circeo 12.</p>
+
+        <h2>Prenota ora</h2>
+        <p>Un sorriso sano è a 15 minuti da casa tua. Chiamaci: <strong>06 906 23 936</strong>.</p>
+      `,
+    },
   ]
 
   const getArticle = (slug: string) => articles.find(a => a.slug === slug)

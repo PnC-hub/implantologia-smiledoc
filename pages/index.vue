@@ -2,9 +2,11 @@
   <div class="font-poppins text-gray-800 bg-white">
     <SchemaMarkup :faq-items="faqItems" />
     <ExitPopup />
+    <SocialProofWidget />
+    <UrgencyBanner />
 
     <!-- HEADER -->
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 transition-all duration-300" :class="scrolled ? 'py-2' : 'py-3'">
+    <header class="fixed top-10 left-0 right-0 bg-white shadow-sm z-50 transition-all duration-300" :class="scrolled ? 'py-2' : 'py-3'">
       <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
         <NuxtLink to="/" class="flex items-center gap-3">
           <div class="w-10 h-10 bg-brand-dark rounded-full flex items-center justify-center">
@@ -25,7 +27,7 @@
     </header>
 
     <!-- HERO -->
-    <section class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-slate-50 to-white">
+    <section class="pt-36 pb-16 md:pt-44 md:pb-24 bg-gradient-to-b from-slate-50 to-white">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <p class="text-brand-accent font-semibold text-sm uppercase tracking-wider mb-4">Centro Odontoiatrico Smiledoc &mdash; Monterotondo (RM)</p>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-brand-dark mb-6">
@@ -44,23 +46,26 @@
         </div>
         <!-- Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-3xl mx-auto">
-          <div class="text-center">
+          <div class="text-center animate-fade-in-up" style="animation-delay: 0.1s">
             <div class="text-3xl font-extrabold text-brand-dark">25+</div>
             <div class="text-sm text-gray-500">Anni di esperienza</div>
           </div>
-          <div class="text-center">
+          <div class="text-center animate-fade-in-up" style="animation-delay: 0.2s">
             <div class="text-3xl font-extrabold text-brand-dark">5000+</div>
             <div class="text-sm text-gray-500">Impianti inseriti</div>
           </div>
-          <div class="text-center">
+          <div class="text-center animate-fade-in-up" style="animation-delay: 0.3s">
             <div class="text-3xl font-extrabold text-brand-dark">24h</div>
             <div class="text-sm text-gray-500">Denti fissi in giornata</div>
           </div>
-          <div class="text-center">
+          <div class="text-center animate-fade-in-up" style="animation-delay: 0.4s">
             <div class="text-3xl font-extrabold text-brand-dark">98%</div>
             <div class="text-sm text-gray-500">Pazienti soddisfatti</div>
           </div>
         </div>
+
+        <!-- Trust Badges -->
+        <TrustBadges class="mt-8" />
       </div>
     </section>
 
@@ -538,3 +543,35 @@ onMounted(() => {
   })
 })
 </script>
+
+<style>
+/* Animazioni */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes pulse-green {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(39, 174, 96, 0);
+  }
+}
+
+.pulse-green {
+  animation: pulse-green 2s infinite;
+}
+</style>

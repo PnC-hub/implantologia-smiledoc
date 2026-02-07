@@ -1,0 +1,12 @@
+# Robots.txt per implantologiasmiledoc.it
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://implantologiasmiledoc.it/sitemap.xml
+
+# Block admin paths
+Disallow: /api/
+
+# Crawl delay
+Crawl-delay: 1
