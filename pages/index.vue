@@ -44,28 +44,21 @@
             <i class="fas fa-phone"></i>Chiama ora: 06 906 23 936
           </a>
         </div>
-        <!-- Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-3xl mx-auto">
-          <div class="text-center animate-fade-in-up" style="animation-delay: 0.1s">
-            <div class="text-3xl font-extrabold text-brand-dark">25+</div>
-            <div class="text-sm text-gray-500">Anni di esperienza</div>
-          </div>
-          <div class="text-center animate-fade-in-up" style="animation-delay: 0.2s">
-            <div class="text-3xl font-extrabold text-brand-dark">5000+</div>
-            <div class="text-sm text-gray-500">Impianti inseriti</div>
-          </div>
-          <div class="text-center animate-fade-in-up" style="animation-delay: 0.3s">
-            <div class="text-3xl font-extrabold text-brand-dark">24h</div>
-            <div class="text-sm text-gray-500">Denti fissi in giornata</div>
-          </div>
-          <div class="text-center animate-fade-in-up" style="animation-delay: 0.4s">
-            <div class="text-3xl font-extrabold text-brand-dark">98%</div>
-            <div class="text-sm text-gray-500">Pazienti soddisfatti</div>
-          </div>
+        <!-- Stats with Animated Counters -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-3xl mx-auto" data-counter="stats-section">
+          <AnimatedCounter :target="25" suffix="+" label="Anni di esperienza" delay="0.1s" />
+          <AnimatedCounter :target="5000" suffix="+" label="Impianti inseriti" delay="0.2s" />
+          <AnimatedCounter :target="24" suffix="h" label="Denti fissi in giornata" delay="0.3s" />
+          <AnimatedCounter :target="98" suffix="%" label="Pazienti soddisfatti" delay="0.4s" />
         </div>
 
         <!-- Trust Badges -->
         <TrustBadges class="mt-8" />
+
+        <!-- Guarantee Badge - Prominent in Hero -->
+        <div class="mt-6 flex justify-center">
+          <GuaranteeBadge />
+        </div>
       </div>
     </section>
 
@@ -378,6 +371,7 @@
               page-source="Homepage Implantologia - Form principale"
               button-text="Invia la richiesta"
             />
+            <SocialProofCounter :base-count="47" timeframe="questa settimana" />
           </div>
         </div>
       </div>

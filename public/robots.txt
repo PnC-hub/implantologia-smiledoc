@@ -8,5 +8,8 @@ Sitemap: https://implantologiasmiledoc.it/sitemap.xml
 # Block admin paths
 Disallow: /api/
 
+# Block thank you page (noindex)
+Disallow: /grazie
+
 # Crawl delay
 Crawl-delay: 1

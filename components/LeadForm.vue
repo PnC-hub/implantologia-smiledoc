@@ -37,6 +37,23 @@
         </select>
       </div>
       <div v-if="!compact">
+        <label :class="['block text-sm font-medium mb-1', variant === 'dark' ? 'text-white/80' : 'text-gray-700']">Preferenza orario per essere ricontattato</label>
+        <div class="flex gap-4">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input v-model="form.preferenzaOrario" type="radio" value="mattina" class="accent-brand-accent" />
+            <span :class="variant === 'dark' ? 'text-white/80' : 'text-gray-700'">Mattina (9-13)</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input v-model="form.preferenzaOrario" type="radio" value="pomeriggio" class="accent-brand-accent" />
+            <span :class="variant === 'dark' ? 'text-white/80' : 'text-gray-700'">Pomeriggio (14-19)</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input v-model="form.preferenzaOrario" type="radio" value="qualsiasi" class="accent-brand-accent" />
+            <span :class="variant === 'dark' ? 'text-white/80' : 'text-gray-700'">Indifferente</span>
+          </label>
+        </div>
+      </div>
+      <div v-if="!compact">
         <label :class="['block text-sm font-medium mb-1', variant === 'dark' ? 'text-white/80' : 'text-gray-700']">Descrivi brevemente la tua situazione</label>
         <textarea v-model="form.message" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 outline-none transition text-gray-800" placeholder="Es: mi mancano 2 denti, uso una protesi mobile..."></textarea>
       </div>
@@ -83,6 +100,7 @@ const form = reactive({
   phone: '',
   email: '',
   comune: '',
+  preferenzaOrario: 'qualsiasi',
   message: '',
   privacy: false,
 })
